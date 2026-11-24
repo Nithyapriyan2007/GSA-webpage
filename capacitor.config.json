@@ -1,0 +1,9 @@
+{
+  "appId": "com.globalsports.academy",
+  "appName": "GSA Academy",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": true,
+    "webContentsDebuggingEnabled": false
+  }
+}

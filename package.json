@@ -1,0 +1,35 @@
+{
+  "name": "gsa-global-sports-academy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "node server/index.js",
+    "dev:web": "vite",
+    "build": "vite build",
+    "start": "node server/index.js",
+    "preview": "vite preview",
+    "apk": "npm run build && cap sync android && cd android && set JAVA_HOME=C:\\Program Files\\Java\\jdk-18.0.2.1&& gradlew.bat assembleDebug --no-daemon"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.3",
+    "@capacitor/cli": "^6.2.3",
+    "@capacitor/core": "^6.2.3",
+    "concurrently": "^9.2.1",
+    "express": "^5.1.0",
+    "framer-motion": "^12.23.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.7",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.9.1",
+    "recharts": "^3.2.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.0"
+  }
+}
